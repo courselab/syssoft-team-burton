@@ -1,0 +1,3 @@
+# Desafio BIOS Keyboard - SOLVED
+
+Implementei uma função de leitura de teclado diretamente via BIOS em Assembly, utilizando a interrupção 0x16, e integrei essa função ao código C do projeto. No arquivo `main.c`, criei um loop que lê cada tecla pressionada, exibe o caractere na tela e encerra o programa ao detectar 'q' ou 'Q'. Para garantir a impressão correta do caractere, utilizei um buffer de dois bytes, formando uma string válida para o `printf`.
